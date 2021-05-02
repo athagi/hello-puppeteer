@@ -1,6 +1,5 @@
 
 const puppeteer = require('puppeteer')
-// const screenshotDir = '/home/pptruser/';
 const screenshot = 'example.png';
 
 (async () => {
