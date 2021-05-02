@@ -1,0 +1,15 @@
+# puppeteer-user
+- puppeteer の ドキュメントでは コンテナ内で pptruser ユーザを利用することが推奨されている。（https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#running-puppeteer-in-docker）
+- これにより、--no-sandbox オプションが必要なくなる
+- しかし、screenshot をとったときに以下のエラーが出てしまう
+  ```
+  [Error: ENOENT: no such file or directory, open '/home/pptruser/screenshot/github.png'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pptruser/screenshot/github.png'
+  }
+  ```
+
+# root uesr
+
