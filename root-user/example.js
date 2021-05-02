@@ -1,7 +1,6 @@
 
 const puppeteer = require('puppeteer')
-const screenshotDir = '/screenshot/';
-const screenshot = screenshotDir + 'example.png';
+const screenshot = 'example.png';
 
 (async () => {
   const browser = await puppeteer.launch({
